@@ -415,6 +415,8 @@ $('#logoutbtn').on("click", function () {
                 //     }
                 // }
                 
+                }else if(response.status == "not_activated"){
+                    document.getElementById('activationModal').style.display = 'block';
                 }
             }
         });
@@ -519,7 +521,7 @@ $('#logoutbtn').on("click", function () {
                     data: {
                         registerbtn: true,
                         username: registerUsername.value,
-                        lasname: registerLastName.value,
+                        lastname: registerLastName.value,
                         email: registerEmail.value,
                         password: registerPassword.value
 

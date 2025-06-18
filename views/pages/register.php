@@ -6,7 +6,7 @@
             <form action="#" method="post">
                 <div class="key">
                     <i class="fa fa-user" aria-hidden="true"></i>
-                    <input type="text" name="Username" required="" placeholder="Ime" id="registerUsername">
+                    <input type="text" name="username" required="" placeholder="Ime" id="registerUsername">
                     <p class="error" id="usernameError"></p>
                     <div class="clearfix"></div>
                 </div>
@@ -18,13 +18,13 @@
                 </div>
                 <div class="key">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <input type="text" name="Email" required="" placeholder="Email" id="registerEmail">
+                    <input type="text" name="email" required="" placeholder="Email" id="registerEmail">
                     <p class="error" id="emailError"></p>
                     <div class="clearfix"></div>
                 </div>
                 <div class="key">
                     <i class="fa fa-lock" aria-hidden="true"></i>
-                    <input type="password" name="Password" required="" placeholder="Šifra" id="registerPassword">
+                    <input type="password" name="password" required="" placeholder="Šifra" id="registerPassword">
                     <p class="error" id="passwordError"></p>
                     <div class="clearfix"></div>
                 </div>

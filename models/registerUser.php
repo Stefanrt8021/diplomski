@@ -13,7 +13,7 @@ if(isset($_POST['registerbtn']) ){
     $picture = "images/profileImg.jpg";
     $token = bin2hex(random_bytes(16));
     $is_verified = 0;
-    $sql = "INSERT INTO korisnik (username, lastname, password, email,role_id,naziv_src, verification_token, is_verified) VALUES (:username, :lastname, :password, :email,2,:picture, :ver_token, :verified)";
+    $sql = "INSERT INTO korisnik(username, prezime, password, email,role_id,naziv_src, verification_token, is_verified) VALUES (:username, :lastname, :password, :email,2,:picture, :ver_token, :verified)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(":username", $username);
     $stmt->bindParam(":lastname", $lastname);

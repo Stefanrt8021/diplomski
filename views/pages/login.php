@@ -29,4 +29,11 @@
                 <p id="modal-text"></p>
             </div>
         </div>
+        <div id="activationModal" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index:1050;">
+    <div style="background:#fff; max-width:400px; margin:100px auto; padding:20px; border-radius:10px; text-align:center;">
+        <p id="activationText">Vaš nalog nije aktiviran.</p>
+        <button onclick="window.open('https://mailtrap.io/inboxes/3626760/messages')" class="btn btn-primary m-2">Otvori MailTrap</button>
+        <button onclick="document.getElementById('activationModal').style.display='none'" class="btn btn-secondary m-2">Otkaži</button>
+    </div>
+</div>
 </div>

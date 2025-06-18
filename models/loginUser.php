@@ -19,7 +19,7 @@ if(isset($_POST['loginBtn'])){
                 $_SESSION['user'] = $user;
                 echo json_encode(["status" => "success", "user" => $_SESSION['user']]);
             } else {  // Ako profil nije verifikovan
-                echo json_encode(["status" => "error", "message" => "Profil nije aktiviran. Molimo da kliknete aktivacioni link na vašem mejlu!"]);
+                echo json_encode(["status" => "not_activated"]);
             }
         } else {  // Ako lozinka nije tačna
             echo json_encode(["status" => "error", "message" => "Pogrešna lozinka!"]);
