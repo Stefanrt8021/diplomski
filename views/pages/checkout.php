@@ -115,7 +115,7 @@ background:rgba(0,0,0,0.5); justify-content:center; align-items:center;">
       <button type="button" id="closeModal">Otkaži</button>
     </form>
   </div>
-  <div id="modal" class="modal">
+  <div id="modal" class="modal" style="display:none;">
             <div class="modal-content">
                 <p id="modal-text"></p>
             </div>

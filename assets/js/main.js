@@ -840,8 +840,11 @@ $(document).on("click","#potvrdiPorudzbinu", function(){
                 ubacivanje("korpa",[]);
                 ispisProizvodaKorpa();
                 showModalPor("Uspešno ste poručili proizvod.");
-                }
-                location.reload();
+                setTimeout(function(){
+                    window.location.reload();
+                },1501);
+            }
+            
 
         },
         error:function (xhr,status,error){
